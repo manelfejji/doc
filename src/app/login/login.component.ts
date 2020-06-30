@@ -1,5 +1,8 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { Router } from '@angular/router';
+
+import { MatDialog} from '@angular/material/dialog';
 
 
 
@@ -14,5 +17,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+ 
+
 }

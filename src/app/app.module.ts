@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,9 +11,12 @@ import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DocRegisterComponent } from './doc-register/doc-register.component';
-import { SearchComponent } from './search/search.component';
+
 import { PatientComponent } from './patient/patient.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule, MatButtonModule} from '@angular/material';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,13 @@ import { MatDialogModule } from '@angular/material/dialog';
     DocRegisterComponent,
    
     
-    SearchComponent,
+  
    
     
-    PatientComponent
+    PatientComponent,
+   
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -38,6 +44,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     FontAwesomeModule,
     BrowserAnimationsModule ,
     MatDialogModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    HttpClientModule
   ],
   
 

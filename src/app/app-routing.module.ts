@@ -6,7 +6,7 @@ import{HomeComponent}from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 
 import{ DocRegisterComponent} from'./doc-register/doc-register.component';
-import { SearchComponent } from './search/search.component';
+
 import { PatientComponent } from './patient/patient.component';
 
 
@@ -17,7 +17,7 @@ const routes: Routes = [
    { path: 'c', component: HomeComponent},
    { path: 'r', component:RegisterComponent},
    { path: 're', component:DocRegisterComponent},
-   { path: 's', component:SearchComponent},
+   
    { path:'p', component:PatientComponent}
   
 ];
